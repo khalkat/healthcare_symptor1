@@ -1,145 +1,131 @@
 # Healthcare Symptom Checker
 
-## 🎥 Demo Video
+This is a full-stack web application that allows users to input their symptoms and receive possible health conditions along with general advice using an AI-powered system.
 
-https://www.loom.com/share/cbd7f9f45b6d42438b94b2d4f96706d9
-
-Short demo of the application showing full flow (input → AI → output → history)
+⚠️ This project is created for educational purposes only and should not be considered a reliable medical solution.
 
 ---
 
+## 🚀 Key Features
 
-A simple full-stack app where you can enter symptoms and get possible conditions and suggestions using an AI model.
+* Users can enter symptoms through a simple interface
+* The input is processed using an AI model via the Groq API
+* The system provides:
 
-This is built for learning purposes and not for real medical use.
-
----
-
-## What it does
-
-* Takes symptoms as input
-* Sends them to an AI model (via Groq API)
-* Returns:
-
-  * possible conditions
-  * severity
-  * basic recommendations
-  * when to see a doctor
-* Saves previous searches in database
+  * Likely health conditions
+  * Estimated severity
+  * Basic suggestions
+  * Advice on when professional medical help may be needed
+* Previous user queries are saved in a database for future reference
 
 ---
 
-## Tech Stack
-
-Frontend:
-
-* React (Vite)
-* Tailwind CSS
-
-Backend:
-
-* Node.js
-* Express
-* MongoDB
-
-AI:
-
-* Groq API
-* Model: `openai/gpt-oss-120b`
-
----
-
-## Folder Structure
-
-```
-backend/
-  controllers/
-  models/
-  routes/
-  config/
-  server.js
-
-frontend/
-  src/
-  public/
-```
-
----
-
-## Setup
-
-Clone repo:
-
-```
-git clone https://github.com/m-atharkhan/Healthcare-Symptor.git
-cd Healthcare-Symptor
-```
-
-### Backend
-
-```
-cd backend
-npm install
-```
-
-Create `.env`:
-
-```
-MONGO_URI=your_mongodb_uri
-GROQ_API_KEY=your_api_key
-```
-
-Run:
-
-```
-npm start
-```
-
----
+## 🛠️ Technologies Used
 
 ### Frontend
 
-```
+* React (with Vite)
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB
+
+### AI Integration
+
+* Groq API
+* Model used: `openai/gpt-oss-120b`
+
+---
+
+## 📁 Project Structure
+
+backend/
+  controllers/
+  models/
+  routes/
+  config/
+  server.js
+
+frontend/
+  src/
+  public/
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+git clone [https://github.com/m-atharkhan/Healthcare-Symptor.git](https://github.com/m-atharkhan/Healthcare-Symptor.git)
+cd Healthcare-Symptor
+
+---
+
+### 2️⃣ Backend Configuration
+
+cd backend
+npm install
+
+Create a `.env` file and include the following:
+
+MONGO_URI=your_mongodb_connection_string
+GROQ_API_KEY=your_api_key
+
+Start the backend server:
+
+npm start
+
+---
+
+### 3️⃣ Frontend Configuration
+
 cd frontend
 npm install
 npm run dev
-```
 
 ---
 
-## Usage
+## 📌 How to Use
 
-* Open the app
-* Enter symptoms
-* Click analyze
-* Results will be shown below
-* Previous results are stored
+* Launch the application in your browser
+* Enter your symptoms (for example: fever, headache)
+* Click on the **Analyze** button
+* View the generated results instantly
+* Past queries will be stored and can be accessed later
 
 ---
 
-## API
+## 🔗 API Details
 
-POST `/analyze`
+### POST /analyze
 
-```
+Request Body:
 {
-  "symptoms": "fever, headache"
+"symptoms": "fever, headache"
 }
-```
-
-GET `/history`
-
-Returns stored records
 
 ---
 
-## Note
+### GET /history
 
-This is not a medical tool.
-Do not rely on it for actual diagnosis.
+Retrieves all previously stored symptom records.
 
 ---
 
-## Author
+## ⚠️ Disclaimer
 
-Mohammad Athar
+This application is not intended for medical diagnosis or treatment.
+Always consult a qualified healthcare professional for medical concerns.
+
+---
+
+## 👤 Author
+
+Khalkat Jahan
+
+---
+
+If you want, I can make it even more **professional (resume-level / GitHub standout with badges, screenshots, etc.)** 🔥
