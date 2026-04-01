@@ -125,7 +125,3 @@ Always consult a qualified healthcare professional for medical concerns.
 ## 👤 Author
 
 Khalkat Jahan
-
----
-
-If you want, I can make it even more **professional (resume-level / GitHub standout with badges, screenshots, etc.)** 🔥
